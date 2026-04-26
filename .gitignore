@@ -4,6 +4,8 @@
 __pycache__/
 *.o
 *.obj
+dist/
+build/
 *.class
 *.exe
 *.dll
@@ -12,12 +14,11 @@ __pycache__/
 *.out
 
 # Dependencies
+vendor/
 node_modules/
-venv/
-.venv/
 .env
 .env.local
-.env.*
+*.env.*
 
 # Logs and temp files
 *.log
@@ -38,30 +39,12 @@ coverage/
 htmlcov/
 .coverage
 
-# Distribution / Build
-dist/
-build/
-target/
-.gradle/
+# Laravel-specific
+/storage/logs/*
+/public/storage
+/bootstrap/cache/*
+!.gitkeep
 
-# Python specific
-*.py[cod]
-*$py.class
-*.so
-.Python
-build/
-develop-eggs/
-.installed.cfg
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.eggs/
-.mypy_cache/
-.pytest_cache/
-.tox/
-.coverage
+# PHP-specific
+*.php~
 ```
