@@ -4,6 +4,8 @@
 __pycache__/
 *.o
 *.obj
+dist/
+build/
 *.class
 *.exe
 *.dll
@@ -16,7 +18,7 @@ vendor/
 node_modules/
 .env
 .env.local
-.env.*
+*.env.*
 
 # Logs and temp files
 *.log
@@ -32,13 +34,17 @@ node_modules/
 .DS_Store
 Thumbs.db
 
-# Coverage and testing
-.coverage
+# Coverage
 coverage/
 htmlcov/
+.coverage
 
-# Build directories
-dist/
-build/
-target/
+# Laravel-specific
+/storage/logs/*
+/public/storage
+/bootstrap/cache/*
+!.gitkeep
+
+# PHP-specific
+*.php~
 ```
